@@ -1,0 +1,54 @@
+Shower Sex
+- Child Birth
+[SUCCESS]
+
+Change World Test:
+- Survival
+[PASS]
+
+Join Test:
+- Teleport Return World
+[PASS]
+
+Die Test:
+- Spectator
+[PASS]
+
+-----------------------------
+
+Game:
+- Border Shrink 500 -> 200
+- Border Shrink 200 -> 50
+- Rollback AIR [-25 - 25]
+- Border Shrink 50 -> 20
+- Rollback AIR [-10 -10]
+[PASS ALL]
+
+Look out for:
+A: Duplicate Messages
+[PASS]
+B: Resetting Border
+[PASS]
+C: Border Not Work
+[PASS]
+D: Errors
+[PASS]
+
+------------------------------
+
+Commands:
+/event start ^
+- Gear Everyone
+[PASS]
+/event stop
+- Clear Inventories
+- Border Set 500
+[PASS]
+
+
+Start:
+- Cannot Break Blocks
+- Cannot Pvp
+- Check Config ON/OFF (should be on)
+[PASS]
+

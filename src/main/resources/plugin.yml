@@ -1,0 +1,13 @@
+name: Event
+version: '${project.version}'
+main: com.kevin.event.Event
+api-version: 1.19
+commands:
+  event:
+    description: "Start of event command"
+  join:
+    description: "Leave the event"
+  leave:
+    description: "Join the event"
+softdepend:
+  - Multiverse-Core

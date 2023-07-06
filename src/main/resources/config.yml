@@ -1,0 +1,54 @@
+# SETUP
+  # World the event is hosted in
+event-world: "eventWorld"
+ # Start spawn location
+spawn-X: 0
+spawn-Y: 64
+spawn-Z: 0
+ # Amount of players before the border continues from 200 to 50
+continue-shrink-pt1: 6
+ # Amount of players before the border continues from 50 to 40
+continue-shrink-pt2: 5
+ # Amount of players before the border continues from 40 to 20
+continue-shrink-pt3: 4
+ # [ROLLBACK CORE] Rollback Region of blocks that will be replaced by air from 64 (or highest) to 40
+ # 25 to -25 Rollback of Air
+block-remove-pt1: "EventHole1"
+ # [ROLLBACK CORE] Rollback Region of blocks that will be replaced by air from 40 to 0
+ # 20 to -20 Rollback of Air
+block-remove-pt2: "EventHole2"
+ # [ROLLBACK CORE] Rollback Region of blocks that will be replaced by air from 0 to -62
+ # 10 to -10 Rollback of Air
+block-remove-pt3: "EventHole3"
+
+# World which a player will spawn if they rejoin
+rejoin-world: "none"
+
+# (OPTIONAL) BORDER TIME:
+
+# Time from 500 -> 200 | Default: 600
+border-time1: 600
+# Time from 200 -> 50 | Default: 300
+border-time2: 300
+
+# (OPTIONAL) EVENT BLOCKS ROLLBACK
+# set to 'none' if you don't have one
+block-respawn: "none"
+
+# MORE SETTINGS:
+
+# If this is set to true, then a there will be no winner until everyone is deceased.
+# Set this to true if you are testing this by yourself
+single-player: false
+
+# The countdown length in minutes at the start of the event
+countdown-timer: 5
+
+# Teleport players back to a location after death
+return-on-death: false
+return-location:
+  world: "lobbyWorld"
+  x: 0
+  y: 64
+  z: 0
+
